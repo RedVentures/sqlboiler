@@ -97,7 +97,7 @@ func (m *MySQLDriver) Assemble(config drivers.Config) (dbinfo *drivers.DBInfo, e
 			RQ: '`',
 
 			UseLastInsertID: true,
-			UseSchema:       false,
+			UseSchema:       true,
 		},
 	}
 
