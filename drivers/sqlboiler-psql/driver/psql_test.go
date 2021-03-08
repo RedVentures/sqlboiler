@@ -18,7 +18,7 @@ import (
 	"os/exec"
 	"testing"
 
-	"github.com/RedVentures/sqlboiler/v4/drivers"
+	"github.com/RedVentures/sqlboiler/v5/drivers"
 )
 
 var (

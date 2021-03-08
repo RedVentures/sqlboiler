@@ -12,10 +12,10 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/RedVentures/sqlboiler/v4/importers"
+	"github.com/RedVentures/sqlboiler/v5/importers"
 
-	"github.com/RedVentures/sqlboiler/v4/drivers"
-	_ "github.com/RedVentures/sqlboiler/v4/drivers/mocks"
+	"github.com/RedVentures/sqlboiler/v5/drivers"
+	_ "github.com/RedVentures/sqlboiler/v5/drivers/mocks"
 )
 
 var state *State
@@ -81,7 +81,7 @@ func TestNew(t *testing.T) {
 		fmt.Println()
 	}
 
-	cmd = exec.Command("go", "mod", "edit", fmt.Sprintf("-replace=github.com/RedVentures/sqlboiler/v4=%s", filepath.Dir(string(goModFilePath))))
+	cmd = exec.Command("go", "mod", "edit", fmt.Sprintf("-replace=github.com/RedVentures/sqlboiler/v5=%s", filepath.Dir(string(goModFilePath))))
 	cmd.Dir = state.Config.OutFolder
 	cmd.Stderr = buf
 

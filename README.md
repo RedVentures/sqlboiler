@@ -1,7 +1,7 @@
 ![sqlboiler logo](https://i.imgur.com/lMXUTPE.png)
 
 [![License](https://img.shields.io/badge/license-BSD-blue.svg)](https://github.com/RedVentures/sqlboiler/blob/master/LICENSE)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-5272B4)](https://pkg.go.dev/mod/github.com/RedVentures/sqlboiler/v4)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-5272B4)](https://pkg.go.dev/mod/github.com/RedVentures/sqlboiler/v5)
 [![Slack](https://img.shields.io/badge/slack-%23general-lightgrey.svg)](https://sqlboiler.from-the.cloud)
 ![ActionsCI](https://github.com/RedVentures/sqlboiler/workflows/test/badge.svg)
 [![Go Report Card](https://goreportcard.com/badge/RedVentures/sqlboiler)](http://goreportcard.com/report/RedVentures/sqlboiler)
@@ -140,9 +140,9 @@ Table of Contents
 
 | Database          | Driver Location |
 | ----------------- | --------------- |
-| PostgreSQL        | [https://github.com/RedVentures/sqlboiler/v4/drivers/sqlboiler-psql](drivers/sqlboiler-psql)
-| MySQL             | [https://github.com/RedVentures/sqlboiler/v4/drivers/sqlboiler-mysql](drivers/sqlboiler-mysql)
-| MSSQLServer 2012+ | [https://github.com/RedVentures/sqlboiler/v4/drivers/sqlboiler-mssql](drivers/sqlboiler-mssql)
+| PostgreSQL        | [https://github.com/RedVentures/sqlboiler/v5/drivers/sqlboiler-psql](drivers/sqlboiler-psql)
+| MySQL             | [https://github.com/RedVentures/sqlboiler/v5/drivers/sqlboiler-mysql](drivers/sqlboiler-mysql)
+| MSSQLServer 2012+ | [https://github.com/RedVentures/sqlboiler/v5/drivers/sqlboiler-mssql](drivers/sqlboiler-mssql)
 | SQLite3           | https://github.com/RedVentures/sqlboiler-sqlite3
 | CockroachDB       | https://github.com/glerchundi/sqlboiler-crdb
 
@@ -157,7 +157,7 @@ For a comprehensive list of available operations and examples please see [Featur
 ```go
 import (
   // Import this so we don't have to use qm.Limit etc.
-  . "github.com/RedVentures/sqlboiler/v4/queries/qm"
+  . "github.com/RedVentures/sqlboiler/v5/queries/qm"
 )
 
 // Open handle to database like normal
@@ -292,7 +292,7 @@ into your `go.mod` file at the correct version.
 
 ```shell
 # Do not forget the trailing /v4
-go get github.com/RedVentures/sqlboiler/v4
+go get github.com/RedVentures/sqlboiler/v5
 # Assuming you're going to use the null package for its additional null types
 # Do not forget the trailing /v8
 go get github.com/volatiletech/null/v8
@@ -1103,7 +1103,7 @@ safe, but be careful!
 
 ```go
 // Dot import so we can access query mods directly instead of prefixing with "qm."
-import . "github.com/RedVentures/sqlboiler/v4/queries/qm"
+import . "github.com/RedVentures/sqlboiler/v5/queries/qm"
 
 // Use a raw query against a generated struct (Pilot in this example)
 // If this query mod exists in your call, it will override the others.
@@ -1243,7 +1243,7 @@ in combination with your own custom, non-generated model.
 
 ### Binding
 
-For a comprehensive ruleset for `Bind()` you can refer to our [pkg.go.dev](https://pkg.go.dev/github.com/RedVentures/sqlboiler/v4/queries#Bind).
+For a comprehensive ruleset for `Bind()` you can refer to our [pkg.go.dev](https://pkg.go.dev/github.com/RedVentures/sqlboiler/v5/queries#Bind).
 
 The `Bind()` [Finisher](#finisher) allows the results of a query built with
 the [Raw SQL](#raw-query) method or the [Query Builder](#query-building) methods to be bound
@@ -1521,7 +1521,7 @@ tx.Rollback()
 
 It's also worth noting that there's a way to take advantage of `boil.SetDB()`
 by using the
-[boil.BeginTx()](https://pkg.go.dev/github.com/RedVentures/sqlboiler/v4/boil#BeginTx)
+[boil.BeginTx()](https://pkg.go.dev/github.com/RedVentures/sqlboiler/v5/boil#BeginTx)
 function. This opens a transaction using the globally stored database.
 
 ### Debug Logging
@@ -1596,7 +1596,7 @@ greylist in cases where you want to insert a Go zero value.
 **NOTE:** CreatedAt/UpdatedAt are not included in `Whitelist` automatically.
 
 See the documentation for
-[boil.Columns.InsertColumnSet](https://pkg.go.dev/github.com/RedVentures/sqlboiler/v4/boil/#Columns.InsertColumnSet)
+[boil.Columns.InsertColumnSet](https://pkg.go.dev/github.com/RedVentures/sqlboiler/v5/boil/#Columns.InsertColumnSet)
 for more details.
 
 ```go
@@ -1648,7 +1648,7 @@ documentation above for more details.
 **NOTE:** CreatedAt/UpdatedAt are not included in `Whitelist` automatically.
 
 See the documentation for
-[boil.Columns.UpdateColumnSet](https://pkg.go.dev/github.com/RedVentures/sqlboiler/v4/boil/#Columns.UpdateColumnSet)
+[boil.Columns.UpdateColumnSet](https://pkg.go.dev/github.com/RedVentures/sqlboiler/v5/boil/#Columns.UpdateColumnSet)
 for more details.
 
 ```go

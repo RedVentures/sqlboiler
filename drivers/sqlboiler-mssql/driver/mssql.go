@@ -8,10 +8,10 @@ import (
 	"strings"
 
 	// Side effect import go-mssqldb
+	"github.com/RedVentures/sqlboiler/v5/drivers"
+	"github.com/RedVentures/sqlboiler/v5/importers"
 	_ "github.com/denisenkom/go-mssqldb"
 	"github.com/friendsofgo/errors"
-	"github.com/RedVentures/sqlboiler/v4/drivers"
-	"github.com/RedVentures/sqlboiler/v4/importers"
 	"github.com/volatiletech/strmangle"
 )
 
@@ -465,7 +465,7 @@ func (MSSQLDriver) Imports() (col importers.Collection, err error) {
 			},
 			ThirdParty: importers.List{
 				`"github.com/volatiletech/strmangle"`,
-				`"github.com/RedVentures/sqlboiler/v4/drivers"`,
+				`"github.com/RedVentures/sqlboiler/v5/drivers"`,
 			},
 		},
 	}
@@ -489,7 +489,7 @@ func (MSSQLDriver) Imports() (col importers.Collection, err error) {
 				`"github.com/kat-co/vala"`,
 				`"github.com/friendsofgo/errors"`,
 				`"github.com/spf13/viper"`,
-				`"github.com/RedVentures/sqlboiler/v4/drivers/sqlboiler-mssql/driver"`,
+				`"github.com/RedVentures/sqlboiler/v5/drivers/sqlboiler-mssql/driver"`,
 				`"github.com/volatiletech/randomize"`,
 				`_ "github.com/denisenkom/go-mssqldb"`,
 			},
@@ -549,10 +549,10 @@ func (MSSQLDriver) Imports() (col importers.Collection, err error) {
 			Standard: importers.List{`"time"`},
 		},
 		"types.Decimal": {
-			Standard: importers.List{`"github.com/RedVentures/sqlboiler/v4/types"`},
+			Standard: importers.List{`"github.com/RedVentures/sqlboiler/v5/types"`},
 		},
 		"types.NullDecimal": {
-			Standard: importers.List{`"github.com/RedVentures/sqlboiler/v4/types"`},
+			Standard: importers.List{`"github.com/RedVentures/sqlboiler/v5/types"`},
 		},
 	}
 	return col, err

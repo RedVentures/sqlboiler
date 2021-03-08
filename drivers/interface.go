@@ -5,8 +5,8 @@ package drivers
 import (
 	"sort"
 
+	"github.com/RedVentures/sqlboiler/v5/importers"
 	"github.com/friendsofgo/errors"
-	"github.com/RedVentures/sqlboiler/v4/importers"
 	"github.com/volatiletech/strmangle"
 )
 

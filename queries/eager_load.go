@@ -6,8 +6,8 @@ import (
 	"reflect"
 	"strings"
 
+	"github.com/RedVentures/sqlboiler/v5/boil"
 	"github.com/friendsofgo/errors"
-	"github.com/RedVentures/sqlboiler/v4/boil"
 	"github.com/volatiletech/strmangle"
 )
 

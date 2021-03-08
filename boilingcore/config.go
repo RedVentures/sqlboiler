@@ -4,9 +4,9 @@ import (
 	"path/filepath"
 	"strings"
 
+	"github.com/RedVentures/sqlboiler/v5/drivers"
+	"github.com/RedVentures/sqlboiler/v5/importers"
 	"github.com/spf13/cast"
-	"github.com/RedVentures/sqlboiler/v4/drivers"
-	"github.com/RedVentures/sqlboiler/v4/importers"
 )
 
 // Config for the running of the commands

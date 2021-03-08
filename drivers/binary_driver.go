@@ -7,8 +7,8 @@ import (
 	"os"
 	"os/exec"
 
+	"github.com/RedVentures/sqlboiler/v5/importers"
 	"github.com/friendsofgo/errors"
-	"github.com/RedVentures/sqlboiler/v4/importers"
 )
 
 type binaryDriver string

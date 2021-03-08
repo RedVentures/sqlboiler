@@ -11,9 +11,9 @@ import (
 	"strings"
 	"text/template"
 
+	"github.com/RedVentures/sqlboiler/v5/drivers"
+	"github.com/RedVentures/sqlboiler/v5/templatebin"
 	"github.com/friendsofgo/errors"
-	"github.com/RedVentures/sqlboiler/v4/drivers"
-	"github.com/RedVentures/sqlboiler/v4/templatebin"
 	"github.com/volatiletech/strmangle"
 )
 

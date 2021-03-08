@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/RedVentures/sqlboiler/v4/drivers"
+	"github.com/RedVentures/sqlboiler/v5/drivers"
 )
 
 func TestConfig_OutputDirDepth(t *testing.T) {

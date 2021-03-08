@@ -5,8 +5,8 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/RedVentures/sqlboiler/v4/boil"
-	"github.com/RedVentures/sqlboiler/v4/drivers"
+	"github.com/RedVentures/sqlboiler/v5/boil"
+	"github.com/RedVentures/sqlboiler/v5/drivers"
 )
 
 // joinKind is the type of join

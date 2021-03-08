@@ -3,7 +3,7 @@ package boilingcore
 import (
 	"fmt"
 
-	"github.com/RedVentures/sqlboiler/v4/drivers"
+	"github.com/RedVentures/sqlboiler/v5/drivers"
 	"github.com/volatiletech/strmangle"
 )
 

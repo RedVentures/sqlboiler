@@ -9,8 +9,8 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/RedVentures/sqlboiler/v5/drivers"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/RedVentures/sqlboiler/v4/drivers"
 )
 
 var writeGoldenFiles = flag.Bool(

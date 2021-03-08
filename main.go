@@ -8,12 +8,12 @@ import (
 	"path/filepath"
 	"strings"
 
+	"github.com/RedVentures/sqlboiler/v5/boilingcore"
+	"github.com/RedVentures/sqlboiler/v5/drivers"
+	"github.com/RedVentures/sqlboiler/v5/importers"
 	"github.com/friendsofgo/errors"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/RedVentures/sqlboiler/v4/boilingcore"
-	"github.com/RedVentures/sqlboiler/v4/drivers"
-	"github.com/RedVentures/sqlboiler/v4/importers"
 )
 
 //go:generate go-bindata -nometadata -pkg templatebin -o templatebin/bindata.go templates templates/singleton templates_test templates_test/singleton

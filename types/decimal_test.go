@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/RedVentures/sqlboiler/v5/queries/qmhelper"
 	"github.com/ericlagergren/decimal"
-	"github.com/RedVentures/sqlboiler/v4/queries/qmhelper"
 )
 
 func TestDecimal_Value(t *testing.T) {
