@@ -7,10 +7,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/friendsofgo/errors"
-	"github.com/go-sql-driver/mysql"
 	"github.com/RedVentures/sqlboiler/v4/drivers"
 	"github.com/RedVentures/sqlboiler/v4/importers"
+	"github.com/friendsofgo/errors"
+	"github.com/go-sql-driver/mysql"
 )
 
 func init() {
@@ -66,7 +66,6 @@ func (m *MySQLDriver) Assemble(config drivers.Config) (dbinfo *drivers.DBInfo, e
 	host := config.MustString(drivers.ConfigHost)
 	port := config.DefaultInt(drivers.ConfigPort, 3306)
 	sslmode := config.DefaultString(drivers.ConfigSSLMode, "true")
-
 	schema := dbname
 	whitelist, _ := config.StringSlice(drivers.ConfigWhitelist)
 	blacklist, _ := config.StringSlice(drivers.ConfigBlacklist)
@@ -92,6 +91,7 @@ func (m *MySQLDriver) Assemble(config drivers.Config) (dbinfo *drivers.DBInfo, e
 	}()
 
 	dbinfo = &drivers.DBInfo{
+		Schema: schema,
 		Dialect: drivers.Dialect{
 			LQ: '`',
 			RQ: '`',
