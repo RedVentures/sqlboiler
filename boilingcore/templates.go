@@ -12,8 +12,8 @@ import (
 	"text/template"
 
 	"github.com/friendsofgo/errors"
-	"github.com/volatiletech/sqlboiler/v4/drivers"
-	"github.com/volatiletech/sqlboiler/v4/templatebin"
+	"github.com/RedVentures/sqlboiler/v4/drivers"
+	"github.com/RedVentures/sqlboiler/v4/templatebin"
 	"github.com/volatiletech/strmangle"
 )
 

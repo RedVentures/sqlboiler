@@ -13,7 +13,7 @@ import (
 	"unicode"
 
 	"github.com/friendsofgo/errors"
-	"github.com/volatiletech/sqlboiler/v4/boil"
+	"github.com/RedVentures/sqlboiler/v4/boil"
 	"github.com/volatiletech/strmangle"
 )
 

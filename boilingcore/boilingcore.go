@@ -11,10 +11,10 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/RedVentures/sqlboiler/v4/drivers"
+	"github.com/RedVentures/sqlboiler/v4/importers"
+	"github.com/RedVentures/sqlboiler/v4/templatebin"
 	"github.com/friendsofgo/errors"
-	"github.com/volatiletech/sqlboiler/v4/drivers"
-	"github.com/volatiletech/sqlboiler/v4/importers"
-	"github.com/volatiletech/sqlboiler/v4/templatebin"
 	"github.com/volatiletech/strmangle"
 )
 
@@ -88,7 +88,11 @@ func New(config *Config) (*State, error) {
 		)
 	}
 
+	fmt.Printf("Getting driver: %s\n", config.DriverName)
+
 	s.Driver = drivers.GetDriver(config.DriverName)
+
+	fmt.Printf("Got driver: %+v\n", s.Driver)
 
 	err := s.initDBInfo(config.DriverConfig)
 	if err != nil {
