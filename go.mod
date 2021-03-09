@@ -4,7 +4,6 @@ go 1.14
 
 require (
 	github.com/DATA-DOG/go-sqlmock v1.4.1
-	github.com/RedVentures/sqlboiler v3.7.1+incompatible // indirect
 	github.com/davecgh/go-spew v1.1.1
 	github.com/denisenkom/go-mssqldb v0.0.0-20200206145737-bbfc9a55622e
 	github.com/ericlagergren/decimal v0.0.0-20181231230500-73749d4874d5
